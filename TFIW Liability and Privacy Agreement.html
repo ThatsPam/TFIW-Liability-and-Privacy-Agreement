@@ -1,0 +1,325 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>TFIW Liability Agreement</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Liability agreement, course terms, and privacy for The Future Is Wealthy courses and workbooks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Young+Serif&display=swap">
+<style id="page-style">
+/* Layout: one readable column, like a printed course page; numbered sections because the order is the agreement's own clause order. */
+:root {
+  --bg: #FAF7F2;          /* warm white */
+  --ink: #0E2E2A;         /* deep green-black */
+  --muted: #6B3F2A;       /* cocoa replaces grey */
+  --accent: #17695A;      /* teal-green */
+  --rule: #E6DDD3;        /* hairline */
+  --sprout: #F2B134;      /* marigold, thin accents only */
+  --panel: #F3EEE6;
+  --display: "Young Serif", Georgia, "Times New Roman", serif;
+  --body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E2E2A; --ink: #FAF7F2; --muted: #D9C3B4; --accent: #6FC2AE;
+    --rule: #2A4A45; --panel: #13392F; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E2E2A; --ink: #FAF7F2; --muted: #D9C3B4; --accent: #6FC2AE;
+  --rule: #2A4A45; --panel: #13392F; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: 1.0625rem; line-height: 1.65;
+}
+.wrap {
+  max-width: 44rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 2.5rem 4rem;
+  display: grid; gap: 2rem;
+}
+header { display: grid; gap: 1.5rem; padding-bottom: 1.75rem; border-bottom: 1px solid var(--rule); }
+.logo { width: 15rem; max-width: 100%; height: auto; color: var(--ink); display: block; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.15; margin: 0; text-wrap: balance; }
+.meta { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin: 0; font-size: .9375rem; color: var(--muted); }
+.meta dt { font-weight: 600; display: inline; }
+.meta dd { display: inline; margin: 0 0 0 .35rem; }
+.lead { margin: 0; font-size: 1.125rem; }
+.summary { background: var(--panel); border-radius: 6px; padding: 1.25rem 1.5rem; display: grid; gap: .5rem; }
+.summary h2 { font-family: var(--body); font-size: .8125rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0; }
+.summary ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .35rem; }
+ol.terms { list-style: none; margin: 0; padding: 0; counter-reset: clause; display: grid; gap: 1.75rem; }
+ol.terms > li { counter-increment: clause; display: grid; gap: .5rem; }
+ol.terms h2 { font-family: var(--display); font-weight: 400; font-size: 1.375rem; line-height: 1.3; margin: 0; display: flex; gap: .75rem; align-items: baseline; text-wrap: balance; }
+ol.terms h2::before { content: counter(clause); font-family: var(--body); font-weight: 700; font-size: .875rem; color: var(--accent); min-width: 1.25rem; font-variant-numeric: tabular-nums; }
+ol.terms p, ol.terms ul { margin: 0; padding-left: 2rem; }
+ol.terms ul { padding-left: 3.2rem; display: grid; gap: .3rem; }
+.caps { font-size: .96875rem; }
+.agree { border-top: 2px solid var(--sprout); padding-top: 1.5rem; display: grid; gap: .75rem; }
+.agree h2 { font-family: var(--display); font-weight: 400; font-size: 1.375rem; margin: 0; }
+.agree p { margin: 0; }
+footer { font-size: .875rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1.25rem; display: grid; gap: .35rem; }
+footer p { margin: 0; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 480px) {
+  ol.terms p { padding-left: 0; }
+  ol.terms ul { padding-left: 1.2rem; }
+}
+
+/* Owner-only edit mode */
+.editbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--panel); border-top: 1px solid var(--rule);
+  padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.editbar-in { max-width: 44rem; margin: 0 auto; padding-block: .75rem; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; font-size: .9375rem; }
+.edit-status { flex: 1 1 14rem; min-width: 0; color: var(--muted); }
+.edit-bump { display: flex; gap: .4rem; align-items: center; color: var(--muted); }
+.eb { font: 600 .9375rem var(--body); padding: .5rem 1rem; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--bg); cursor: pointer; }
+.eb.ghost { background: transparent; color: var(--accent); }
+.eb:disabled { opacity: .6; cursor: wait; }
+.eb:focus-visible, .sec-remove:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+body:has(.editbar:not([hidden])) .wrap { padding-bottom: 8rem; }
+.is-editing [contenteditable] { outline: 1px dashed var(--rule); outline-offset: 3px; border-radius: 2px; }
+.is-editing [contenteditable]:focus { outline: 2px solid var(--accent); }
+.sec-remove { justify-self: start; margin-left: 2rem; font: 600 .8125rem var(--body); color: var(--muted); background: none; border: 1px solid var(--rule); border-radius: 6px; padding: .25rem .6rem; cursor: pointer; }
+.sec-remove[data-armed] { color: var(--bg); background: var(--muted); border-color: var(--muted); }
+</style>
+
+<div class="wrap" id="doc">
+  <header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-273.24 -200.64 2265.28 284.28" class="logo" role="img" aria-label="The Future Is Wealthy" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpjZGFjNjUxOS0zMjIwLTRhNjEtYTkwOC1iNDY1Y2VlZGY0YTIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFA0S1B66IQyUoKC0LGJ5iYAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo2YjgwZjYxZi0xYTFiLTRmMWEtOTg0Yi03ZWM2N2EyZTViZDVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNou53mso7TopLD+ZSAmDhuAwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggxghphdFo0kH7XUYdHM5qSgHse3T+ZoodGubvkDklUeWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaBQ/WVQuvIunw4KnlwsJ/i4AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCr6xBn2cwILjAia5ALYIeb1wHvlihZMVHQuZtAtS4TQmRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBjLZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmNkYWM2NTE5LTMyMjAtNGE2MS1hOTA4LWI0NjVjZWVkZjRhMi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjczYzI0OTBjLTM1NmYtNDMzYS05NThiLTk1MDUyM2MzOTY2YXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDGCGmF0WjSQftdRh0czmpKAex7dP5mih0a5u+QOSVR5aJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggLxV2DmHT4wJlenR+5KY0zAMR7qFMYPxVsuOnYKpictmiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggYroaTHedCiULNB3HkehRWWJeW72FMemSAZ0OJ9AVXbV0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQKSCOWloW5n56J4ECGcyNFcyMfS/nH1OKwPvkUlj5jj4KWQ1/yec9qU9xQp1/5xNYj4kDTkUHJ06iiXOTZBpj4A=</c2pa:manifest></metadata><g transform="translate(-273.14 -210.69) scale(2.54)"><path d="M50 90V55" stroke="#17695A" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M50 60C47 45 38 36 22 34C22 50 32 59 50 60Z" stroke="#17695A" stroke-width="5" stroke-linejoin="round" fill="none"/><path d="M50 52C53 37 62 28 78 26C78 42 68 51 50 52Z" stroke="#17695A" stroke-width="5" stroke-linejoin="round" fill="none"/></g><path d="M31.2 0V-2L39.4 -4Q47.6 -5.8 47.6 -14V-128H30.6Q23.2 -128 20 -124.1Q16.8 -120.2 13.2 -113.4L6 -99.4H4L5 -132H120.4L121.2 -99.4H119.2L112 -113.4Q108.6 -120.2 105.4 -124.1Q102.2 -128 94.8 -128H77.8V-14Q77.8 -5.8 86 -4L94.2 -2V0ZM130 0V-2L132.4 -2.8Q139.6 -5.2 139.6 -12.8V-119.6Q139.6 -123.8 138.2 -125.8Q136.8 -127.8 132.8 -128.8L129.8 -129.6V-131.6L165 -140.2L168.2 -138.4L167.4 -110.2V-85.2Q174.4 -91 182.5 -95.1Q190.6 -99.2 200.4 -99.2Q213.4 -99.2 221.1 -91.8Q228.8 -84.4 228.8 -69V-12.6Q228.8 -8.6 230.4 -6.2Q232 -3.8 236 -2.6L237.6 -2V0H190.8V-2L193.2 -2.6Q200.4 -5 200.4 -12.8V-75.6Q200.4 -83.6 197.7 -86.6Q195 -89.6 188.2 -89.6Q183.8 -89.6 178.6 -87.9Q173.4 -86.2 168 -82V-12.4Q168 -4.6 175.2 -2.4L176.8 -2V0ZM295.6 -99.2Q308.6 -99.2 317.8 -93.9Q327 -88.6 331.9 -79.5Q336.8 -70.4 336.8 -58.8Q336.8 -56.6 336.6 -54.3Q336.4 -52 335.8 -50.2H276.2Q276.4 -28.6 283.9 -19.1Q291.4 -9.6 306.2 -9.6Q316.2 -9.6 322.4 -12.8Q328.6 -16 334 -22.2L336 -20.4Q329.8 -9.4 319.5 -3.2Q309.2 3 294.8 3Q280.6 3 269.6 -3.1Q258.6 -9.2 252.4 -20.6Q246.2 -32 246.2 -47.8Q246.2 -64.2 253.4 -75.7Q260.6 -87.2 271.9 -93.2Q283.2 -99.2 295.6 -99.2ZM295 -95.2Q289.2 -95.2 285.1 -91.7Q281 -88.2 278.7 -79.3Q276.4 -70.4 276.2 -54.2H310.4Q312.4 -76 308.8 -85.6Q305.2 -95.2 295 -95.2ZM390.8 0V-2L394.4 -3.2Q398.4 -4.6 399.8 -7Q401.2 -9.4 401.2 -13.4Q401.4 -25.4 401.4 -37.6Q401.4 -49.8 401.4 -62V-70Q401.4 -82 401.4 -94.1Q401.4 -106.2 401.2 -118.2Q401.2 -122.2 400.1 -124.6Q399 -127 395.2 -128.4L390.8 -130V-132H487.6L489 -98.8H487L475.6 -119.8Q473.6 -123.6 471 -125.8Q468.4 -128 463.8 -128H431.6Q431.4 -113.8 431.4 -99Q431.4 -84.2 431.4 -69.6H452.2Q456.8 -69.6 459 -71.6Q461.2 -73.6 463.2 -77.4L467.4 -85H469.4V-50H467.4L463 -57.6Q461 -61.2 458.9 -63.4Q456.8 -65.6 452.2 -65.6H431.4Q431.4 -51.6 431.4 -38.9Q431.4 -26.2 431.6 -14Q431.6 -6.2 439.2 -3.8L445.2 -2V0ZM534.2 3Q526.4 3 519.9 0Q513.4 -3 509.7 -9.7Q506 -16.4 506.2 -27.4L506.8 -78.8Q506.8 -83.4 505.2 -85.4Q503.6 -87.4 500.2 -88.2L497.8 -89V-91L533.6 -98L535.6 -96L534.6 -67.6V-19.4Q534.6 -13 538.3 -10Q542 -7 547.6 -7Q553.2 -7 557.6 -8.6Q562 -10.2 566.4 -13.4L567.2 -78.6Q567.2 -83.2 565.8 -85.1Q564.4 -87 560.6 -87.8L558.6 -88.4V-90.4L593.6 -98L595.6 -96L595 -67.6V-13.4Q595 -9 596.2 -6.6Q597.4 -4.2 601.4 -2.6L603.4 -2V0L568.4 2L566.6 -9.8Q560 -4.4 552.3 -0.7Q544.6 3 534.2 3ZM649.4 3Q636.6 3 629.5 -3.4Q622.4 -9.8 622.4 -23.8V-92.2H608.6V-94.2L613.4 -95Q619.6 -96.4 624.1 -99Q628.6 -101.6 633 -106L649.4 -124.2H651.4L650.8 -96.2H673.2V-92.2H650.6V-20.2Q650.6 -13.2 653.7 -9.6Q656.8 -6 661.6 -6Q665.8 -6 669 -8.1Q672.2 -10.2 675.4 -13.8L677.4 -11.8Q673.4 -5 666.4 -1Q659.4 3 649.4 3ZM719.8 3Q712 3 705.5 0Q699 -3 695.3 -9.7Q691.6 -16.4 691.8 -27.4L692.4 -78.8Q692.4 -83.4 690.8 -85.4Q689.2 -87.4 685.8 -88.2L683.4 -89V-91L719.2 -98L721.2 -96L720.2 -67.6V-19.4Q720.2 -13 723.9 -10Q727.6 -7 733.2 -7Q738.8 -7 743.2 -8.6Q747.6 -10.2 752 -13.4L752.8 -78.6Q752.8 -83.2 751.4 -85.1Q750 -87 746.2 -87.8L744.2 -88.4V-90.4L779.2 -98L781.2 -96L780.6 -67.6V-13.4Q780.6 -9 781.8 -6.6Q783 -4.2 787 -2.6L789 -2V0L754 2L752.2 -9.8Q745.6 -4.4 737.9 -0.7Q730.2 3 719.8 3ZM797 0V-2L800 -2.8Q804 -4 805.5 -6.4Q807 -8.8 807 -12.6V-75.2Q807 -79.6 805.5 -81.7Q804 -83.8 800 -84.6L797 -85.4V-87.4L831.4 -99L833.4 -97L835.2 -79.8V-78.2Q838 -83.8 842.5 -88.5Q847 -93.2 852.5 -96.2Q858 -99.2 863.4 -99.2Q871 -99.2 875 -95Q879 -90.8 879 -84.4Q879 -77.6 875.1 -73.9Q871.2 -70.2 865.8 -70.2Q857.4 -70.2 851 -78.6L850.6 -79Q848.6 -81.8 846 -82.1Q843.4 -82.4 841.2 -79.6Q839.2 -77.8 837.9 -75.3Q836.6 -72.8 835.4 -69.6V-13.8Q835.4 -5.8 842.4 -3.8L848.8 -2V0ZM935.4 -99.2Q948.4 -99.2 957.6 -93.9Q966.8 -88.6 971.7 -79.5Q976.6 -70.4 976.6 -58.8Q976.6 -56.6 976.4 -54.3Q976.2 -52 975.6 -50.2H916Q916.2 -28.6 923.7 -19.1Q931.2 -9.6 946 -9.6Q956 -9.6 962.2 -12.8Q968.4 -16 973.8 -22.2L975.8 -20.4Q969.6 -9.4 959.3 -3.2Q949 3 934.6 3Q920.4 3 909.4 -3.1Q898.4 -9.2 892.2 -20.6Q886 -32 886 -47.8Q886 -64.2 893.2 -75.7Q900.4 -87.2 911.7 -93.2Q923 -99.2 935.4 -99.2ZM934.8 -95.2Q929 -95.2 924.9 -91.7Q920.8 -88.2 918.5 -79.3Q916.2 -70.4 916 -54.2H950.2Q952.2 -76 948.6 -85.6Q945 -95.2 934.8 -95.2ZM1030.6 0V-2L1034.6 -3.6Q1038.6 -5 1039.9 -7.4Q1041.2 -9.8 1041.2 -13.8V-118.2Q1041.2 -122.2 1040 -124.6Q1038.8 -127 1034.6 -128.4L1030.6 -130V-132H1082V-130L1078 -128.4Q1074 -127 1072.7 -124.6Q1071.4 -122.2 1071.4 -118.2V-13.8Q1071.4 -9.8 1072.7 -7.5Q1074 -5.2 1078 -3.6L1082 -2V0ZM1125 3Q1115.2 3 1107.4 0.7Q1099.6 -1.6 1093 -5L1093.2 -28.8H1095.2L1102 -16.8Q1106.4 -8.8 1111.7 -4.9Q1117 -1 1125.2 -1Q1134.8 -1 1140.7 -5.3Q1146.6 -9.6 1146.6 -16.8Q1146.6 -23.4 1142.4 -27.6Q1138.2 -31.8 1126.8 -35.2L1118.4 -37.8Q1106.2 -41.4 1099.2 -49Q1092.2 -56.6 1092.2 -67.6Q1092.2 -80.8 1102.6 -90Q1113 -99.2 1132.4 -99.2Q1140.2 -99.2 1147.1 -97.5Q1154 -95.8 1160.4 -92.4L1159.2 -70.8H1157.2L1150.2 -83.2Q1146.4 -89.8 1142.7 -92.5Q1139 -95.2 1131.6 -95.2Q1124.8 -95.2 1118.8 -91.4Q1112.8 -87.6 1112.8 -80.6Q1112.8 -73.8 1117.9 -69.8Q1123 -65.8 1133 -62.4L1142 -59.8Q1156.4 -55.4 1162.6 -47.7Q1168.8 -40 1168.8 -29.2Q1168.8 -14.6 1157.3 -5.8Q1145.8 3 1125 3ZM1264.4 0.6 1229 -118.4Q1227.6 -123 1226 -125.1Q1224.4 -127.2 1220.4 -129L1218 -130V-132H1271V-130L1266.8 -128.4Q1262.2 -126.6 1260.6 -124Q1259 -121.4 1260.4 -116.8L1282.2 -33.6L1305.8 -103.4L1301.2 -117.6Q1299.8 -121.8 1298.6 -124Q1297.4 -126.2 1294.6 -127.6L1290.2 -130V-132H1340.4V-130L1334.2 -127.6Q1330.2 -126.2 1329.7 -123.5Q1329.2 -120.8 1330.6 -116.6L1356 -31.6L1380 -115Q1381.4 -119.8 1381 -123.4Q1380.6 -127 1376 -128.6L1371.8 -130V-132H1399.6V-130L1394.4 -128Q1390.4 -126.6 1388.8 -123.6Q1387.2 -120.6 1386 -116.2L1352.8 0.6H1339L1309 -93.4L1278.2 0.6ZM1455.6 -99.2Q1468.6 -99.2 1477.8 -93.9Q1487 -88.6 1491.9 -79.5Q1496.8 -70.4 1496.8 -58.8Q1496.8 -56.6 1496.6 -54.3Q1496.4 -52 1495.8 -50.2H1436.2Q1436.4 -28.6 1443.9 -19.1Q1451.4 -9.6 1466.2 -9.6Q1476.2 -9.6 1482.4 -12.8Q1488.6 -16 1494 -22.2L1496 -20.4Q1489.8 -9.4 1479.5 -3.2Q1469.2 3 1454.8 3Q1440.6 3 1429.6 -3.1Q1418.6 -9.2 1412.4 -20.6Q1406.2 -32 1406.2 -47.8Q1406.2 -64.2 1413.4 -75.7Q1420.6 -87.2 1431.9 -93.2Q1443.2 -99.2 1455.6 -99.2ZM1455 -95.2Q1449.2 -95.2 1445.1 -91.7Q1441 -88.2 1438.7 -79.3Q1436.4 -70.4 1436.2 -54.2H1470.4Q1472.4 -76 1468.8 -85.6Q1465.2 -95.2 1455 -95.2ZM1536 3Q1524.4 3 1516.5 -3.6Q1508.6 -10.2 1508.6 -22.6Q1508.6 -32 1518.2 -39.9Q1527.8 -47.8 1548.4 -51.8Q1551.6 -52.4 1555.6 -53.1Q1559.6 -53.8 1564 -54.6V-70.4Q1564 -84 1560.7 -89.5Q1557.4 -95 1550.4 -95Q1545.6 -95 1542.8 -91.9Q1540 -88.8 1539.2 -81.2L1538.8 -79Q1538.4 -70.4 1534.6 -66.4Q1530.8 -62.4 1525.2 -62.4Q1520 -62.4 1516.6 -65.6Q1513.2 -68.8 1513.2 -74.2Q1513.2 -82.4 1518.9 -88Q1524.6 -93.6 1534 -96.4Q1543.4 -99.2 1554.4 -99.2Q1572.2 -99.2 1581.9 -90.5Q1591.6 -81.8 1591.6 -62.2V-18Q1591.6 -9 1600 -9H1604.4L1606.2 -7.4Q1602.4 -2.6 1597.9 0Q1593.4 2.6 1585.2 2.6Q1576.4 2.6 1571.3 -1.5Q1566.2 -5.6 1564.6 -12.4Q1558.6 -6 1552.3 -1.5Q1546 3 1536 3ZM1548.2 -9.2Q1552.2 -9.2 1555.7 -11.1Q1559.2 -13 1564 -17V-50.6Q1562 -50.2 1560 -49.8Q1558 -49.4 1555.4 -49Q1546.2 -46.6 1540.7 -40.9Q1535.2 -35.2 1535.2 -25.6Q1535.2 -17.4 1539 -13.3Q1542.8 -9.2 1548.2 -9.2ZM1611 0V-2L1613.4 -2.8Q1620.6 -5.2 1620.6 -12.8V-119.8Q1620.6 -123.8 1619 -125.9Q1617.4 -128 1613.4 -129L1610.8 -129.6V-131.6L1647.4 -140.2L1649.8 -138.4L1649 -110.4V-42Q1649 -34.6 1649.1 -27.3Q1649.2 -20 1649.2 -12.8Q1649.2 -8.8 1650.8 -6.3Q1652.4 -3.8 1656.2 -2.6L1658.8 -2V0ZM1705.6 3Q1692.8 3 1685.7 -3.4Q1678.6 -9.8 1678.6 -23.8V-92.2H1664.8V-94.2L1669.6 -95Q1675.8 -96.4 1680.3 -99Q1684.8 -101.6 1689.2 -106L1705.6 -124.2H1707.6L1707 -96.2H1729.4V-92.2H1706.8V-20.2Q1706.8 -13.2 1709.9 -9.6Q1713 -6 1717.8 -6Q1722 -6 1725.2 -8.1Q1728.4 -10.2 1731.6 -13.8L1733.6 -11.8Q1729.6 -5 1722.6 -1Q1715.6 3 1705.6 3ZM1740.4 0V-2L1742.8 -2.8Q1750 -5.2 1750 -12.8V-119.6Q1750 -123.8 1748.6 -125.8Q1747.2 -127.8 1743.2 -128.8L1740.2 -129.6V-131.6L1775.4 -140.2L1778.6 -138.4L1777.8 -110.2V-85.2Q1784.8 -91 1792.9 -95.1Q1801 -99.2 1810.8 -99.2Q1823.8 -99.2 1831.5 -91.8Q1839.2 -84.4 1839.2 -69V-12.6Q1839.2 -8.6 1840.8 -6.2Q1842.4 -3.8 1846.4 -2.6L1848 -2V0H1801.2V-2L1803.6 -2.6Q1810.8 -5 1810.8 -12.8V-75.6Q1810.8 -83.6 1808.1 -86.6Q1805.4 -89.6 1798.6 -89.6Q1794.2 -89.6 1789 -87.9Q1783.8 -86.2 1778.4 -82V-12.4Q1778.4 -4.6 1785.6 -2.4L1787.2 -2V0ZM1874.2 48Q1866.2 48 1861.5 44Q1856.8 40 1856.8 33.8Q1856.8 28.2 1860.8 24.8Q1864.8 21.4 1869.8 21.4Q1874.8 21.4 1878.2 23.5Q1881.6 25.6 1884.2 29.6L1885.6 31.2Q1890 37.2 1894.4 31Q1896.2 28 1898.5 23.1Q1900.8 18.2 1903.8 10L1865 -82.8Q1863.6 -86.6 1862 -88.9Q1860.4 -91.2 1856.8 -92.8L1853.2 -94.2V-96.2H1903V-94.4L1899 -92.8Q1894.6 -91.4 1894.5 -88.3Q1894.4 -85.2 1896 -80.6L1916.8 -26.6L1936.6 -81.2Q1938.2 -85.8 1937.8 -88.9Q1937.4 -92 1932.8 -93.2L1928.6 -94.2V-96.2H1956.4V-94.2L1952 -92.8Q1947.4 -91.4 1945.6 -88.8Q1943.8 -86.2 1942.2 -81.6L1910 6.2Q1902.2 27.2 1894.4 37.6Q1886.6 48 1874.2 48Z" fill="currentColor"/></svg>
+    <h1>Liability Agreement, Course Terms and Privacy</h1>
+    <dl class="meta">
+      <div><dt>Effective</dt><dd>October 22, 2026</dd></div>
+      <div><dt>Version</dt><dd>1.3</dd></div>
+      <div><dt>Applies to</dt><dd>All TFIW material</dd></div>
+    </dl>
+    <p class="lead">Please read this before you buy. When you check the box at checkout, you're agreeing to everything on this page.</p>
+  </header>
+
+  <section class="summary" aria-labelledby="sum">
+    <h2 id="sum">The short version</h2>
+    <ul>
+      <li>Our courses are for learning. They help you explore a field, understand how it works, and decide if it's for you.</li>
+      <li>A course is not a license, an apprenticeship, or industry certification, and it doesn't qualify you to do regulated work.</li>
+      <li>If you try anything you learn, you do it at your own risk. Follow safety rules, manufacturer instructions, and your local codes.</li>
+      <li>We collect only what we need to deliver your course, send rewards, and keep in touch. We never sell your information.</li>
+      <li>The full terms below are what count. This summary is only there to help.</li>
+    </ul>
+  </section>
+
+  <ol class="terms">
+    <li>
+      <h2>Who we are and what this covers</h2>
+      <p>"TFIW," "we," "us," and "our" mean The Future Is Wealthy LLC. "You" means the person buying or using a TFIW product. This agreement covers the following but is not limited to TFIW digital course, workbook, guide, assessment, bonus file, and related material you buy or receive (together, the "Materials").</p>
+    </li>
+    <li>
+      <h2>Educational use only</h2>
+      <p>The Materials are general educational information written at a beginner level. They are not professional, legal, financial, medical, engineering, or safety advice for your situation. They are not a substitute for hands-on training under a qualified person, an apprenticeship, a licensed professional, or the safety training an employer or program is required to provide.</p>
+    </li>
+    <li>
+      <h2>Not a license or certification</h2>
+      <p>Finishing a course, passing its assessment, or earning a TFIW Take-Home Kit, discount code, gift box, or other reward recognizes completion of an introductory course. It is not a license or industry certification. It does not qualify anyone to perform regulated work, and TFIW does not promise any job, apprenticeship placement, income, or other result.</p>
+    </li>
+    <li>
+      <h2>Safety and assumption of risk</h2>
+      <p>Trade work involves real hazards, including electricity, heat, pressure, chemicals, heights, sharp edges, and power tools. You understand and accept these risks. If you choose to practice or apply anything in the Materials, you do so voluntarily and at your own risk. You agree to:</p>
+      <ul>
+        <li>follow the manufacturer's instructions for every tool, material, and piece of protective equipment;</li>
+        <li>follow your employer's, job site's, school's, or program's safety rules;</li>
+        <li>check your state, county, and city requirements for licensing, permits, and codes before doing any regulated work, because they vary by location;</li>
+        <li>never work on or near energized electrical equipment, gas lines, or pressurized systems without proper training, protective equipment, and authorization; and</li>
+        <li>stop and get a qualified professional whenever you are unsure.</li>
+      </ul>
+    </li>
+    <li>
+      <h2>Release of liability</h2>
+      <p class="caps">To the fullest extent the law allows, you release The Future Is Wealthy LLC and its owner, contributors, and reviewers from any claim for injury, illness, death, property damage, or other loss that results from your use or misuse of the Materials, or from any activity you choose to do based on them.</p>
+    </li>
+    <li>
+      <h2>No warranties</h2>
+      <p class="caps">The Materials are provided "as is." We work to keep them accurate and current, but codes, rules, and best practices change, and we can't promise the Materials are complete, error-free, or right for your location. To the fullest extent the law allows, we disclaim all warranties, express or implied, including fitness for a particular purpose.</p>
+    </li>
+    <li>
+      <h2>Limit of liability</h2>
+      <p class="caps">To the fullest extent the law allows, TFIW will not be liable for any indirect, incidental, special, or consequential damages. Our total liability for any claim related to the Materials is limited to the amount you paid for the product the claim is about.</p>
+    </li>
+    <li>
+      <h2>Your responsibility to others</h2>
+      <p>If someone else gets hurt or suffers a loss because of work you chose to do using the Materials, you agree to cover the costs of any claim they bring against TFIW, including reasonable legal fees, to the extent the law allows.</p>
+    </li>
+    <li>
+      <h2>Personal license to use the Materials</h2>
+      <p>Your purchase gives you a personal, non-transferable license to use the Materials for your own learning. You may print or copy workbooks for your own use. You may not resell, share, post, or redistribute the Materials, or use them to teach a paid class, without our written permission. All content, diagrams, and branding belong to The Future Is Wealthy LLC.</p>
+    </li>
+    <li>
+      <h2>Rewards and assessments</h2>
+      <p>Take-Home Kits, discount codes, gift boxes, and other rewards are optional extras. We set their requirements and may change or end a reward program at any time, but we will honor rewards already earned under the rules in place when you earned them.</p>
+    </li>
+    <li>
+      <h2>Privacy: what we collect and why</h2>
+      <p>When you buy from us, Gumroad shares your name and email address with us. When you fill out a TFIW survey, review, or assessment form, we also collect your name, email address, mailing address, and final assessment score. We use this information to deliver your Materials, send you course updates and offers, improve our courses, and mail a gift to eligible participants. You are eligible for the gift if you complete the review and assessment and score 90% or higher on the final assessment.</p>
+    </li>
+    <li>
+      <h2>How we use your responses</h2>
+      <p>By submitting a TFIW survey, review, or assessment form, you agree that The Future Is Wealthy LLC may use your responses and statements for marketing and course improvement. If we quote you, we will use only your first name and last initial. You confirm that you completed the form of your own free will.</p>
+    </li>
+    <li>
+      <h2>Your privacy choices</h2>
+      <p>We never sell your information. To opt out of marketing emails, stop us from using your name in marketing, or ask us to delete your information, email connect@thefutureiswealthy.com. Payment details are handled by Gumroad under its own privacy policy, and we never see your full card number.</p>
+    </li>
+    <li>
+      <h2>Purchases and refunds</h2>
+      <p>Purchases are processed by Gumroad, which acts as the seller of record and handles payment and sales tax. Refunds follow the refund policy shown on the product page at the time you buy.</p>
+    </li>
+    <li>
+      <h2>If part of this agreement doesn't hold</h2>
+      <p>If any part of this agreement is found unenforceable, it will be limited only as much as needed, and the rest stays in effect.</p>
+    </li>
+    <li>
+      <h2>Changes to this agreement</h2>
+      <p>We may update this agreement. The version and effective date at the top show which one applies. The version in effect when you bought a product applies to that purchase.</p>
+    </li>
+  </ol>
+
+  <section class="agree" aria-labelledby="agree">
+    <h2 id="agree">Your agreement</h2>
+    <p>By checking the box at checkout, you confirm that you are at least 18 years old (or have a parent or guardian's permission), that you have read and understood this agreement, and that you agree to it.</p>
+    <p>Questions? Reply to your Gumroad receipt email and we'll get back to you.</p>
+  </section>
+
+  <footer>
+    <p>The Future Is Wealthy LLC · Practical skills, written out and drawn out.</p>
+    <p>Recognizes completion of an introductory course. Not a license or industry certification.</p>
+  </footer>
+</div>
+
+<div class="editbar" id="editbar" hidden>
+  <div class="editbar-in">
+    <span class="edit-status" id="edit-status" role="status">Only you see this bar. Customers just see the agreement.</span>
+    <label class="edit-bump" id="edit-bump-wrap" hidden><input type="checkbox" id="edit-bump" checked> Update date and version on save</label>
+    <button type="button" class="eb ghost" id="edit-add" hidden>Add section</button>
+    <button type="button" class="eb ghost" id="edit-cancel" hidden>Cancel</button>
+    <button type="button" class="eb" id="edit-toggle">Edit agreement</button>
+  </div>
+</div>
+
+<script id="editor-js">
+(() => {
+  const RESET = ':root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}';
+  const HEAD = "<title>TFIW Liability Agreement</title>\n<meta name=\"claude:viewport-fit-sides\" content=\"cover\">\n<meta name=\"description\" content=\"Liability agreement, course terms, and privacy for The Future Is Wealthy courses and workbooks.\">\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Young+Serif&display=swap\">";
+  const $ = (id) => document.getElementById(id);
+  const doc = $('doc'), bar = $('editbar'), toggle = $('edit-toggle'), cancel = $('edit-cancel');
+  const add = $('edit-add'), bumpWrap = $('edit-bump-wrap'), bump = $('edit-bump'), status = $('edit-status');
+  const EDITABLE = 'h1, .meta dd, .lead, .summary h2, .summary li, ol.terms h2, ol.terms p, ol.terms ul li, .agree h2, .agree p, footer p';
+  let artifact = null, editing = false;
+  const BAR = bar.outerHTML;
+
+  const say = (t) => { status.textContent = t; };
+
+  function removeBtn() {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'sec-remove'; b.textContent = 'Remove section';
+    b.addEventListener('click', () => {
+      const li = b.closest('li');
+      if (b.dataset.armed) { li.remove(); return; }
+      b.dataset.armed = '1'; b.textContent = 'Click again to remove';
+      setTimeout(() => { if (b.isConnected) { delete b.dataset.armed; b.textContent = 'Remove section'; } }, 4000);
+    });
+    return b;
+  }
+
+  function startEdit() {
+    editing = true;
+    doc.classList.add('is-editing');
+    doc.querySelectorAll(EDITABLE).forEach((el) => el.setAttribute('contenteditable', 'true'));
+    doc.querySelectorAll('ol.terms > li').forEach((li) => li.appendChild(removeBtn()));
+    toggle.textContent = 'Save changes';
+    cancel.hidden = false; add.hidden = false; bumpWrap.hidden = false;
+    say('Editing. Click any text to change it.');
+  }
+
+  add.addEventListener('click', () => {
+    const li = document.createElement('li');
+    li.innerHTML = '<h2 contenteditable="true">New section title</h2><p contenteditable="true">Section text goes here.</p>';
+    li.appendChild(removeBtn());
+    doc.querySelector('ol.terms').appendChild(li);
+    li.querySelector('h2').focus();
+  });
+
+  // Paste as plain text so formatting from Word or Google Docs doesn't come along.
+  doc.addEventListener('paste', (e) => {
+    if (!editing) return;
+    e.preventDefault();
+    const text = e.clipboardData.getData('text/plain');
+    document.execCommand('insertText', false, text);
+  });
+
+  function today() {
+    return new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  }
+
+  function cleanContent() {
+    const c = doc.cloneNode(true);
+    c.classList.remove('is-editing');
+    c.querySelectorAll('.sec-remove, script, style, iframe, object, embed').forEach((n) => n.remove());
+    c.querySelectorAll('[contenteditable]').forEach((n) => n.removeAttribute('contenteditable'));
+    c.querySelectorAll('*').forEach((n) => {
+      if (n.closest('svg')) return;
+      [...n.attributes].forEach((a) => { if (a.name === 'style' || a.name.startsWith('on')) n.removeAttribute(a.name); });
+    });
+    c.querySelectorAll('span, font').forEach((n) => { if (!n.closest('svg')) n.replaceWith(...n.childNodes); });
+    if (bump.checked) {
+      const dds = c.querySelectorAll('.meta dd');
+      if (dds[0]) dds[0].textContent = today();
+      if (dds[1]) {
+        const v = parseFloat(dds[1].textContent);
+        if (!isNaN(v)) dds[1].textContent = (Math.round((v + 0.1) * 10) / 10).toFixed(1);
+      }
+    }
+    return c.outerHTML;
+  }
+
+  function buildPage() {
+    const head = HEAD;
+    return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>' + RESET + '</style></head><body>' +
+      head + '\n<style id="page-style">' + $('page-style').textContent + '</style>\n\n' +
+      cleanContent() + '\n' + BAR +
+      '\n\n<script id="editor-js">' + $('editor-js').textContent + '</scr' + 'ipt>\n</body></html>';
+  }
+
+  async function save() {
+    toggle.disabled = true; say('Saving...');
+    try {
+      await artifact.publish(buildPage());
+      say('Saved. Reloading the new version...');
+    } catch (err) {
+      toggle.disabled = false;
+      const code = err && err.code;
+      if (code === 'conflict') say('This page changed somewhere else, so it is reloading. Make your edit again.');
+      else if (code === 'not_writer' || code === 'not_granted') { say('This view can only read the agreement.'); toggle.hidden = true; }
+      else if (code === 'rate_limited') say('Too many saves in a row. Wait a minute, then click Save again.');
+      else say('That save did not go through (' + (code || 'unknown error') + '). Click Save to try again.');
+    }
+  }
+
+  toggle.addEventListener('click', () => { editing ? save() : startEdit(); });
+  cancel.addEventListener('click', () => location.reload());
+
+  (async () => {
+    if (!window.claude || !claude.use) return;
+    const [a, u] = await Promise.all([
+      claude.use('artifact').catch(() => null),
+      claude.use('user').catch(() => null),
+    ]);
+    if (!a || !u) return;
+    let ok = false;
+    try { ok = await u.canEdit(); } catch (e) { ok = false; }
+    if (!ok) return;
+    artifact = a;
+    bar.hidden = false;
+  })();
+})();
+</script>
+
+</body></html>
